@@ -19,7 +19,7 @@ function makevCard(){
     var vcard = "BEGIN:VCARD\nVERSION:3.0\n"
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
-        + "TELL;CELL:+5516991874598\n"
+        + "TELL;TYPE=CELL:+5516991874598\n"
         + "PHOTO:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
         + "END:VCARD";
 
