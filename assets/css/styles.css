@@ -108,6 +108,7 @@ li.link a {
     font-weight: 700;
     text-decoration: none;
     padding-right: 6px;
+    outline: none;
 }
 
 .icon {
