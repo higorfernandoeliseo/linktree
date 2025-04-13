@@ -20,7 +20,7 @@ function makevCard(){
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
         + "TELL;CELL:+5516991874598\n"
-        + "PHOTO;TYPE=jpeg;VALUE=uri:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
+        + "PHOTO:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
         + "END:VCARD";
 
     return vcard;
