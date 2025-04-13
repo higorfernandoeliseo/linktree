@@ -1,0 +1,128 @@
+@font-face { 
+    font-family: "inter";
+    src: url('fonts/Inter-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face { 
+    font-family: "inter";
+    src: url('fonts/Inter-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face { 
+    font-family: "inter";
+    src: url('fonts/Inter-SemiBold.otf');
+    font-weight: 600;
+}
+
+@font-face { 
+    font-family: "inter";
+    src: url('fonts/Inter-Bold.otf');
+    font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'inter', Arial, Helvetica, sans-serif;
+    /* background-color: #121212; */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../../assets/img/temp_1.jpg');
+    /* height: 100vh; */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.container {
+    border-radius: 6px;
+    padding: 10px;
+    width: 460px;
+    max-width: 98%;
+    margin-top: 10px;
+}
+
+.container .profile {
+    background-color: #f6f5f3;
+    padding: 12px;
+    display: flex;
+    border-radius: 6px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.imgprofile {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.imgprofile img {
+    width: 100%;
+}
+
+.profile .info_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.info_box h1.firstname {
+    color: #424143;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.info_box span.username {
+    color: #424143;
+    font-size: 15px;
+}
+
+.info_box p.description {
+    margin-top: 8px;
+    color: #424143;
+    font-size: 14px;
+}
+
+
+li.link {
+    background-color: #f6f5f3;
+    padding: 14px;
+    margin: 10px 0 10px 0;
+    border-radius: 8px;
+    border-bottom: 4px solid #dfdfdf;
+    transition: .5s ease;
+}
+
+li.link a {
+    color: #424143;
+    font-weight: 700;
+    text-decoration: none;
+    padding-right: 6px;
+}
+
+.icon {
+    font-weight: 100;
+}
+
+li.link a i {
+    color: #424143;
+    font-size: 25px;
+}
+
+li.link:hover {
+    cursor: pointer;
+    background-color: #dfdfdf;
+    transition: .5s ease;
+    transform: scale(1.05);
+    border-bottom: 4px solid #bfbfbf;
+}
