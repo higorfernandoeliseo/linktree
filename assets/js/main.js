@@ -14,13 +14,25 @@ function downloadtoFile(content, filename, contentType){
 
 }
 
+function getBase64Image(img) {
+    var canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+    var dataURL = canvas.toDataURL("image/jpeg");
+    return dataURL.replace(/^data:image\/?[A-z]*;base64,/);
+}
+
+var image = base64 = getBase64Image("https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg");
+
 function makevCard(){
 
     var vcard = "BEGIN:VCARD\nVERSION:3.0\n"
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
         + "TEL;TYPE=CELL:+55 16 997049362\n"
-        + "PHOTO;TYPE=JPEG;VALUE=URI:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
+        + "PHOTO;ENCODING=BASE64;TYPE=JPEG:"+image+"\n"
         + "END:VCARD";
 
     return vcard;
