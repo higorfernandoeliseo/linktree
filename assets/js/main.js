@@ -19,9 +19,15 @@ function makevCard(){
 
     vcard_begin = 'BEGIN:VCARD\nVERSION:3.0\n';
 
-    vcardname = 'FN:'+nome.innerText+'\nTEL;TYPE=WORK:16 3333-3333\n';
+    vcardname = 'FN:IGOR ELISEO\nTEL;TYPE=WORK,VOICE:16 3333-3333\nEMAIL:higorfernandoeliseo2016@gmail.com\n';
+
+    vcard_end = 'END:VCARD';
     
-    vcard_end = 'END:VCARD;';
+    //vcard_begin = 'BEGIN:VCARD\nVERSION:3.0\n';
+
+    //vcardname = 'FN:'+nome.innerText+'\nTEL;TYPE=WORK:16 3333-3333\n';
+    
+    //vcard_end = 'END:VCARD;';
 
     vcard = vcard_begin+vcardname+vcard_end;
 
