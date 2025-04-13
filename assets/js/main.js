@@ -1,6 +1,8 @@
 const savecontact = document.getElementById("btnsave");
 const nome = document.querySelector(".firstname");
 
+var imagem = encode_base64('https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg', '');
+
 function downloadtoFile(content, filename, contentType){
 
     const a = document.createElement('a');
@@ -14,12 +16,14 @@ function downloadtoFile(content, filename, contentType){
 
 }
 
+
 function makevCard(){
 
     var vcard = "BEGIN:VCARD\nVERSION:3.0\n"
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
         + "TEL;TYPE=CELL:+55 16 997049362\n"
+        + "PHOTO;TYPE=JPEG;ENCODING=b:"+imagem+"\n"
         + "END:VCARD";
 
     return vcard;
