@@ -130,4 +130,5 @@ li.link:hover {
 
 li.link:focus {
     user-select: none;
+    -webkit-tap-higlight-color: transparente;
 }
