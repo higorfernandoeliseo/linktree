@@ -127,3 +127,7 @@ li.link:hover {
     transform: scale(1.05);
     border-bottom: 4px solid #bfbfbf;
 }
+
+li.link:focus {
+    outline: none;
+}
