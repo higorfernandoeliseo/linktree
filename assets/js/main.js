@@ -1,6 +1,5 @@
 const savecontact = document.getElementById("btnsave");
 const nome = document.querySelector(".firstname");
-var vcard, vcard_begin, vcard_end, vcardname;
 
 function downloadtoFile(content, filename, contentType){
 
@@ -17,13 +16,12 @@ function downloadtoFile(content, filename, contentType){
 
 function makevCard(){
 
-    vcard_begin = 'BEGIN:VCARD\nVERSION:3.0\n';
-
-    vcardname = 'FN:'+nome.innerText+'\nTEL;TYPE=WORK,VOICE:16 3333-3333\nEMAIL:higorfernandoeliseo2016@gmail.com\n';
-
-    vcard_end = 'END:VCARD';
-
-    vcard = vcard_begin+vcardname+vcard_end;
+    var vcard = "BEGIN:VCARD\nVERSION:3.0\n"
+        + "N:"+nome.innerText+"\n"
+        + "FN:"+nome.innerText+"\n"
+        + "TELL;CELL:+5516991874598\n"
+        + "PHOTO;TYPE=jpeg;VALUE=uri:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
+        + "END:VCARD";
 
     return vcard;
 
