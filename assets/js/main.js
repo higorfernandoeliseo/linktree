@@ -19,7 +19,7 @@ function makevCard(){
     var vcard = "BEGIN:VCARD\nVERSION:3.0\n"
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
-        + "TEL;TYPE=WORK,VOICE:+55 16 997049362\n"
+        + "TEL;TYPE=CELL:+55 16 997049362\n"
         + "PHOTO;TYPE=JPEG;VALUE=URI:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
         + "END:VCARD";
 
