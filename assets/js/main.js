@@ -31,6 +31,8 @@ function makevCard(){
 
 savecontact.addEventListener("click", () =>{
     
-    downloadtoFile(makevCard(),'igor.vcf','text/vcard');
+    window.open("data:text/x-vcard;urlencoded," + makevCard());
+
+    //downloadtoFile(makevCard(),'igor.vcf','text/vcard');
 
 });
