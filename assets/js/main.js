@@ -2,7 +2,7 @@ const savecontact = document.getElementById("btnsave");
 const nome = document.querySelector(".firstname");
 
 //var imagem = getBase64Image();
-const imagem = document.getElementById("base64image-encode");
+const image = document.getElementById("base64image-encode");
 
 function makevCard(){
 
@@ -10,7 +10,7 @@ function makevCard(){
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
         + "TEL;TYPE=CELL:+55 16 997049362\n"
-        + "PHOTO;TYPE=JPEG;ENCODING=b:"+imagem+"\n"
+        + "PHOTO;TYPE=JPEG;ENCODING=b:"+image+"\n"
         + "END:VCARD";
 
     return vcard;
