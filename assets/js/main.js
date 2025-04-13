@@ -10,7 +10,7 @@ function makevCard(){
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
         + "TEL;TYPE=CELL:+55 16 997049362\n"
-        + "PHOTO;TYPE=JPEG;ENCODING=b:"+image+"\n"
+        + "PHOTO;TYPE=JPEG;ENCODING=b:"+image.value+"\n"
         + "END:VCARD";
 
     return vcard;
