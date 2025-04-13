@@ -19,7 +19,7 @@ function makevCard(){
 
     vcard_begin = 'BEGIN:VCARD\nVERSION:3.0\n';
 
-    vcardname = 'FN:IGOR ELISEO\nTEL;TYPE=WORK,VOICE:16 3333-3333\nEMAIL:higorfernandoeliseo2016@gmail.com\n';
+    vcardname = 'FN:'+nome.innerText+'\nTEL;TYPE=WORK,VOICE:16 3333-3333\nEMAIL:higorfernandoeliseo2016@gmail.com\n';
 
     vcard_end = 'END:VCARD';
     
