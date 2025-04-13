@@ -13,7 +13,8 @@ const getBase64Image = (url) => {
       const ctx = canvas.getContext("2d");
       ctx.drawImage(img, 0, 0);
       const dataURL = canvas.toDataURL("image/jpg");
-      console.log(dataURL)
+      const item_image = dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+      console.log(item_image)
     }
     img.src = url
   }
