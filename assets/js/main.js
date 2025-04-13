@@ -19,7 +19,7 @@ function makevCard(){
 
     vcard_begin = 'BEGIN:VCARD\nVERSION:3.0\n';
 
-    vcardname = 'FN:'+nome.innerText+'\n';
+    vcardname = 'FN:'+nome.innerText+'\nTEL;TYPE=WORK:16 3333-3333\n';
     
     vcard_end = 'END:VCARD;';
 
@@ -31,6 +31,6 @@ function makevCard(){
 
 savecontact.addEventListener("click", () =>{
     
-    downloadtoFile(makevCard(),'teste.vcf','text/vcard');
+    downloadtoFile(makevCard(),'igor.vcf','text/vcard');
 
 });
