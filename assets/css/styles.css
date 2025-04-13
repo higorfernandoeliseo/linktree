@@ -129,5 +129,5 @@ li.link:hover {
 }
 
 li.link:focus {
-    outline: none;
+    user-select: none;
 }
