@@ -20,7 +20,7 @@ function makevCard(){
         + "N:"+nome.innerText+"\n"
         + "FN:"+nome.innerText+"\n"
         + "TEL;TYPE=WORK,VOICE:+55 16 997049362\n"
-        + "PHOTO;JPEG:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
+        + "PHOTO;TYPE=JPEG;VALUE=URI:https://higorfernandoeliseo.github.io/linktree/assets/img/temp_1.jpg\n"
         + "END:VCARD";
 
     return vcard;
